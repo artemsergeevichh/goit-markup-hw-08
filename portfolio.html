@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/index.min.css">
+</head>
+<body>
+    <header class="header"> 
+        <div class="container header__container">
+         <a class="logo header__logo" href="./index.html">Web<span class="studio">Studio</span></a>
+         <nav class="navigation">
+             <ul class="navigation__list">
+                 <li><a class="navigation__link" href="./index.html"><span class="current">Студия</span></a></li>
+                 <li><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
+                 <li><a class="navigation__link" href="">Контакты</a></li>
+             </ul>
+         </nav>
+             <ul class="header__contact connect ">
+                 <li><a class="header__link" href="mailto:info@devstudio.com"><svg class="header__icon" width="16" height="12"><use href="./pic/mail-phone.svg#icon-mail"></use></svg>info@devstudio.com</a></li>
+                 <li><a class="header__link" href="tel:+380961111111"><svg class="header__icon" width="10" height="16"><use href="./pic/mail-phone.svg#icon-phone"></use></svg>+38 096 111 11 11</a></li>
+             </ul>
+             <button type="button" class="menu__open menu-open" >
+                <svg width="40" height="40">
+                    <use class="mobile__menu-open" href="./pic/mobile-menu-symbol.svg#icon-mobile-menu-open"></use> 
+                </svg>
+             </button> 
+        </div>     
+        <div class="backdrop is-hidden mob-menu">
+            <div class="modal">
+               <button type="button" class="modal__close menu-close" ><svg class="" width="18" height="18"><use href="./pic/closee.svg#icon-close-black"></use></svg></button>
+               <p class="modal__title">Оставьте свои данные, мы вам презвоним</p> 
+               <form class="">
+                <label class="modal__text">
+                    <span>Имя</span>
+                    <span class="modal__span">
+                        <input type="text" class="modal__input" name="name" placeholder="" required>
+                            <svg class="modal__icon" width="18" height="18">
+                                <use href="./pic/modal_icon.svg#icon-person"></use>
+                            </svg>
+                    </span>
+                </label>
+                <label class="modal__text">
+                    <span>Телефон</span>
+                    <span class="modal__span">
+                        <input type="tel" class="modal__input" name="tel" placeholder="" required>
+                            <svg class="modal__icon" width="18" height="18">
+                                <use href="./pic/modal_icon.svg#icon-phone"></use>
+                            </svg>    
+                    </span>
+                </label>
+                <label class="modal__text">
+                    <span>Почта</span>
+                    <span class="modal__span">
+                        <input type="email" class="modal__input" name="mail" placeholder="" required pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                            <svg class="modal__icon" width="18" height="18">
+                                <use href="./pic/modal_icon.svg#icon-email"></use>
+                            </svg>    
+                    </span>
+                </label>
+                <label class="modal__text">
+                    <span>Комментарий</span>
+                    <textarea
+                      name="user-text" 
+                      class="modal__area"
+                      placeholder="Введите текст"
+                    ></textarea>
+                </label> 
+                <span class="modal__checkbox">
+                    <input type="checkbox" name="policy" id="policy" class="modal__cbox invisible" value="true">
+                        <label for="policy" class="modal__box">Соглашаюсь с рассылкой и принимаю&nbsp;<a class="modal__terms" href=""> Условия договора</a></label>
+                </span>
+                <button type="submit" class="btn modal__sub">Отправить</button>
+               </form>
+            </div>
+        </div>      
+    </header>
+    <main>
+        <section class="section manu">
+            <div class="container">
+                <h1 class="invisible">Портфолио</h1>
+                <ul class="manu__section">
+                    <li><button class="manu__options current" type="button">Все</button></li>
+                    <li><button class="manu__options" type="button">Веб-сайты</button></li>
+                    <li><button class="manu__options" type="button">Приложения</button></li>
+                    <li><button class="manu__options" type="button">Дизайн</button></li>
+                    <li><button class="manu__options" type="button">Маркетинг</button></li>
+                 </ul> 
+            </div>
+            <div class="container">
+                <ul class="tabs">
+                    <li class="tabs__list">
+                        <a class="tabs__item" href="">
+                            <div class="tabs__picture">
+                                <img src="./pic/img-port-one.jpg" alt="Веб-сайт Технокряк" width="450" height="294">
+                                <p class="tabs__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                            <div class="tabs__name">
+                                <h2 class="tabs__header">Технокряк</h2>
+                                <p class="tabs__marked" >Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tabs__list">
+                        <a class="tabs__item" href="">
+                            <div class="tabs__picture">
+                                <img src="./pic/img-port-two.jpg" alt="Дизайн Постер New Orlean vs Golden Star" width="450" height="294">
+                                <p class="tabs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint itaque tempora quibusdam consequatur quos aut perspiciatis, labore blanditiis eos quod dolore modi incidunt rerum velit eius quia libero aspernatur.</p>
+                            </div>    
+                            <div class="tabs__name">
+                                <h2 class="tabs__header">Постер New Orlean vs Golden Star</h2>
+                                <p class="tabs__marked" >Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tabs__list">
+                        <a class="tabs__item" href="">
+                            <div class="tabs__picture">
+                                <img src="./pic/img-port-thr.jpg" alt="Приложение Ресторан Seafood" width="450" height="294">
+                                <p class="tabs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint itaque tempora quibusdam consequatur quos aut perspiciatis, labore blanditiis eos quod dolore modi incidunt rerum velit eius quia libero aspernatur.</p>
+                            </div>
+                                <div class="tabs__name">
+                               <h2 class="tabs__header">Ресторан Seafood</h2>
+                               <p class="tabs__marked" >Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tabs__list">
+                        <a class="tabs__item" href="">
+                            <div class="tabs__picture">
+                                <img src="./pic/img-port-four.jpg" alt="Маркетинг Проект Prime" width="450" height="294">
+                                <p class="tabs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint itaque tempora quibusdam consequatur quos aut perspiciatis, labore blanditiis eos quod dolore modi incidunt rerum velit eius quia libero aspernatur.</p>
+                            </div>
+                            <div class="tabs__name">
+                                <h2 class="tabs__header">Проект Prime</h2>
+                                <p class="tabs__marked" >Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tabs__list">
+                        <a class="tabs__item" href="">
+                            <div class="tabs__picture">
+                                <img src="./pic/img-port-five.jpg" alt="Приложение Проект Boxes" width="450" height="294">
+                                <p class="tabs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint itaque tempora quibusdam consequatur quos aut perspiciatis, labore blanditiis eos quod dolore modi incidunt rerum velit eius quia libero aspernatur.</p>
+                            </div>
+                            <div class="tabs__name">
+                                <h2 class="tabs__header">Проект Boxes</h2>
+                                <p class="tabs__marked" >Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tabs__list">
+                        <a class="tabs__item" href="">
+                            <div class="tabs__picture">
+                                <img src="./pic/img-port-six.jpg" alt="Веб-сайт Inspiration has no Borders" width="450" height="294">
+                                <p class="tabs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint itaque tempora quibusdam consequatur quos aut perspiciatis, labore blanditiis eos quod dolore modi incidunt rerum velit eius quia libero aspernatur.</p>
+                            </div>
+                            <div class="tabs__name">
+                                <h2 class="tabs__header">Inspiration has no Borders</h2>
+                                <p class="tabs__marked" >Веб-сайт</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tabs__list">
+                        <a class="tabs__item" href="">
+                            <div class="tabs__picture">
+                                <img src="./pic/img-port-seven.jpg" alt="Дизайн Издание Limited Edition" width="450" height="294">
+                                <p class="tabs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint itaque tempora quibusdam consequatur quos aut perspiciatis, labore blanditiis eos quod dolore modi incidunt rerum velit eius quia libero aspernatur.</p>
+                            </div>
+                            <div class="tabs__name">
+                                <h2 class="tabs__header">Издание Limited Edition</h2>
+                                <p class="tabs__marked">Дизайн</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tabs__list">
+                        <a class="tabs__item" href="">
+                            <div class="tabs__picture">
+                                <img src="./pic/img-port-eight.jpg" alt="Маркетинг Проект LAB" width="450" height="294">
+                                <p class="tabs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint itaque tempora quibusdam consequatur quos aut perspiciatis, labore blanditiis eos quod dolore modi incidunt rerum velit eius quia libero aspernatur.</p>
+                            </div>
+                            <div class="tabs__name">
+                                <h2 class="tabs__header">Проект LAB</h2>
+                                <p class="tabs__marked">Маркетинг</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="tabs__list">
+                        <a class="tabs__item" href="">
+                            <div class="tabs__picture">
+                                <img src="./pic/img-port-nine.jpg" alt="Приложение Growing Business" width="450" height="294">
+                                <p class="tabs__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sint itaque tempora quibusdam consequatur quos aut perspiciatis, labore blanditiis eos quod dolore modi incidunt rerum velit eius quia libero aspernatur.</p>
+                            </div>
+                            <div class="tabs__name">
+                                <h2 class="tabs__header">Growing Business</h2>
+                                <p class="tabs__marked">Приложение</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>        
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__div">
+                 <a class="logo footer__logo" href="./index.html">Web<span class="footer__studio">Studio</span></a>
+                 <address>
+                     <ul class="footer__list">
+                         <li><a class="footer__contact" href="https://goo.gl/maps/GF9Laij3RzFoD57K9"
+                          rel="nofollow noopener noreferrer" target="_blank">г. Киев, пр-т Леси Украинки, 26</a></li>
+                         <li><a class="footer__contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                         <li><a class="footer__contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                     </ul>
+                 </address>
+            </div>
+            <div class="join">
+                <p>Присоединяйтесь</p>
+                <ul class="join__item">
+                    <li>
+                        <a href="" class="join__list">
+                            <svg class="join__picture" width="20" height="20">
+                                <use href="./pic/symbol-defs.svg#icon-instagram-2-1-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="join__list">
+                            <svg class="join__picture" width="20" height="20">
+                                <use href="./pic/symbol-defs.svg#icon-twitter-1-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="join__list">
+                            <svg class="join__picture" width="20" height="20">
+                                <use href="./pic/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="join__list">
+                            <svg class="join__picture" width="20" height="20">
+                                <use href="./pic/symbol-defs.svg#icon-linkedin-1-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                 </ul>
+            </div>
+            <div class="join">
+                <form>
+                <p>Подпишитесь на рассылку</p>
+                <ul class="join__link">
+                    <li>
+                        <label class="">
+                            <span class="">
+                                <input type="email" class="join__input" name="mail" placeholder="E-mail">    
+                            </span>
+                        </label>
+                    </li>
+                    <li>
+                        <button type="button" class="btn join__btn"><span class="join__subscribe">Подписаться<svg class="join__icon" width="24" height="24"><use href="./pic/send.svg#icon-send"></use></svg></span></button>    
+                    </li>
+                 </ul>
+                </form>
+            </div>
+        </div>    
+    </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+           <button type="button" class="modal__close" data-modal-close><svg class="" width="18" height="18"><use href="./pic/closee.svg#icon-close-black"></use></svg></button>
+           <p class="modal__title">Оставьте свои данные, мы вам презвоним</p> 
+           <form class="">
+            <label class="modal__text">
+                <span>Имя</span>
+                <span class="modal__span">
+                    <input type="text" class="modal__input" name="name" placeholder="" required>
+                        <svg class="modal__icon" width="18" height="18">
+                            <use href="./pic/modal_icon.svg#icon-person"></use>
+                        </svg>
+                </span>
+            </label>
+            <label class="modal__text">
+                <span>Телефон</span>
+                <span class="modal__span">
+                    <input type="tel" class="modal__input" name="tel" placeholder="" required>
+                        <svg class="modal__icon" width="18" height="18">
+                            <use href="./pic/modal_icon.svg#icon-phone"></use>
+                        </svg>    
+                </span>
+            </label>
+            <label class="modal__text">
+                <span>Почта</span>
+                <span class="modal__span">
+                    <input type="email" class="modal__input" name="mail" placeholder="" required pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
+                        <svg class="modal__icon" width="18" height="18">
+                            <use href="./pic/modal_icon.svg#icon-email"></use>
+                        </svg>    
+                </span>
+            </label>
+            <label class="modal__text">
+                <span>Комментарий</span>
+                <textarea
+                  name="user-text" 
+                  class="modal__area"
+                  placeholder="Введите текст"
+                ></textarea>
+            </label> 
+            <span class="modal__checkbox">
+                <input type="checkbox" name="policy" id="policy" class="modal__cbox invisible" value="true">
+                    <label for="policy" class="modal__box">Соглашаюсь с рассылкой и принимаю&nbsp;<a class="modal__terms" href=""> Условия договора</a></label>
+            </span>
+            <button type="submit" class="btn modal__sub">Отправить</button>
+           </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

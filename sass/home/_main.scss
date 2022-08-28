@@ -1,0 +1,29 @@
+.main {
+    color: var(--option-button-color);
+    background-color: var(--header-footer-color);
+    padding: 118px 0;
+    justify-content: center;
+    text-align: center;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)), 
+        url(../pic/hero-mobile.jpg);
+        height: 400px;
+        background-position: center;
+        
+        
+        
+
+}
+
+
+.main__effect {
+    @include font(26, 1.6, 900, 0.06em);
+    text-transform: uppercase;  
+    max-width: 100%;  
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;    
+}
+
+

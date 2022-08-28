@@ -1,0 +1,41 @@
+.join {
+    @include font(14, 1.2, 700, 0.03em);
+    display: block;
+    text-transform: uppercase;
+    color: var(--option-button-color);
+    text-align: center; 
+    margin-top: 60px;
+}   
+
+.join__item {
+    margin-top: 20px;
+    display: flex;
+    list-style: none;
+    gap: 10px;   
+    justify-content: center;
+}
+.join__link {
+    margin-top: 20px;
+    list-style: none;
+    gap: 10px;   
+}
+.join__list {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 10%);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:focus, &:hover {
+     background-color: var(--buttons-text-color);   
+    }
+}
+
+.join__picture{
+    fill: var(--option-button-color);
+    .join__list:hover & {
+     color: var(--option-button-color);
+    }
+}

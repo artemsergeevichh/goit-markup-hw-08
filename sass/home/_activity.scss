@@ -1,0 +1,39 @@
+.activ {
+    @media screen and (max-width: 1200px) {
+        max-width: 1200px;
+        display: none;
+    }
+}
+.activ__name {
+    @include font(36, 1.17, null, null);
+    text-align: center;
+    font-style: bold;
+    color: var(--title-text-color);
+    padding-bottom: 50px;
+}
+
+.activ__section {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.activ__picture {
+    display: flex;
+    position: relative;
+}
+
+.activ__item {
+    @include font(14, 1.14, 700, 0.03em);
+    position: absolute;
+    display: flex;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--option-button-color);
+    justify-content: center;
+    font-style: normal;
+    text-transform: uppercase;
+    width: 370px;
+    height: 70px;
+    align-items: center;
+    align-self: flex-end;
+}
