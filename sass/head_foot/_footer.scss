@@ -2,21 +2,35 @@
     background-color: var(--header-footer-color);
     padding-top: 60px;
     padding-bottom: 60px; 
-    justify-content: center;;
-     
+    justify-content: center;;    
 }
 
 .footer__container {
-    justify-content: center;
-    
-        
+    justify-content: center; 
+    @media screen and (min-width: 1200px) {
+         display: flex; 
+         justify-content: space-between;
+      }        
+}
+
+.footer__join {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 70px;
+    } 
 }
 
 .footer__div {
     text-align: center;  
+    @media screen and (min-width: 768px) {
+        text-align: left;
+      }
 }
-
-
 
 .footer__list {
     @include font(14, 1.14, 500, 0.02em);
@@ -26,8 +40,6 @@
     margin-top: 20px;
     gap: 8px;
 }
-
-
 
 .footer__contact {
     @include font(14, 1.7, 400, 0.03em);
@@ -40,7 +52,6 @@
      color: var(--buttons-text-color);
     }
 }
-
 
 .footer__contacts {
     @include font(14, 1.7, 400, 0.03em);
@@ -58,8 +69,6 @@
     color: var(--option-button-color);
 }
 
-
-
 .join__input {
     width: 100%;
     height: 50px;
@@ -70,6 +79,9 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     padding-left: 16px;   
     color: var(--option-button-color);
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
 }
 
 .join__icon {
@@ -77,14 +89,23 @@
     margin-left: 10px;   
 }
 
-
 .join__btn {
     border: none;
     display: flex;
     align-items: center;   
 }
+
 .join__subscribe {
     display: flex;
     align-items: center;
+}
+
+.join__p {
+    @media screen and (min-width: 768px) {
+      margin-top: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+    } 
 }
 

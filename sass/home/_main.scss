@@ -10,12 +10,23 @@
         url(../pic/hero-mobile.jpg);
         height: 400px;
         background-position: center;
-        
-        
-        
-
+    @media screen and (min-width: 768px) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../pic/Heder-img-middle.jpg);
+    }
+    @media screen and (min-width: 1200px) {
+        background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), 
+            url(../pic/hbg.jpg);
+            height: 600px;
+            padding: 200px;
+            align-items: center;
+            justify-content: center;     
+    }    
 }
-
 
 .main__effect {
     @include font(26, 1.6, 900, 0.06em);
@@ -23,7 +34,14 @@
     max-width: 100%;  
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;    
+    margin-bottom: 30px; 
+    @media screen and (min-width: 768px) {
+     width: 450px;
+    }   
+    @media screen and (min-width: 1200px) {
+     @include font(44, 1.6, 900, 0.06em);
+     width: 750px;  
+    }
 }
 
 

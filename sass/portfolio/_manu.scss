@@ -1,5 +1,6 @@
 .manu {
     background-color: var(--option-button-color);
+    padding-bottom: 0px;
     
 }
 .manu__section {  
@@ -12,13 +13,11 @@
     row-gap: 15px;
     text-align: center;
     margin-bottom: 50px;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
     
-     
 }
-
-
-
-
 
 .manu__options {
     @include font(16, 1.6, 500, 0.03em);

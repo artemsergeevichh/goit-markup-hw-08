@@ -5,12 +5,22 @@
     text-decoration: none;
     color: var(--buttons-text-color);
     display: block;
+    @media screen and (min-width: 1200px) {
+        @include font(26, 1.2, 700, 0.03em);  
+    } 
+    
     
 }
 .header__logo {
     text-align: center;
     padding-top: 16px;
     padding-bottom: 16px;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+
+    }
+    
     
 }
 

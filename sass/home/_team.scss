@@ -7,6 +7,9 @@
     text-align: center;
     font-style: bold;
     color: var(--title-text-color); 
+    @media screen and (min-width: 1200px) {
+        @include font(36, 1.17, 700, 0.03em);
+    }
 }
 
 .team__section {
@@ -14,8 +17,7 @@
     list-style: none;
     padding-top: 30px;
     flex-wrap: wrap;
-    gap: 30px;
-    
+    gap: 30px;  
 }
 
 .team__list {
@@ -24,8 +26,12 @@
     border-radius: 0px 0px 4px 4px;
     border-bottom: 30px;
     width: 100%;
-    
-    
+    @media screen and (min-width: 768px) {
+     width: calc((100% - 30px)/ 2); 
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 90px)/ 4); 
+    }    
 }
 
 .team__figure {
@@ -33,9 +39,8 @@
     background-color: var(--option-button-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-   
-
 }
+
 .team__caption {
     padding: 30px;
 }
@@ -43,14 +48,14 @@
 .team__position {
     padding-top: 10px;
     text-align: center;
-
 }
+
 .team__member {
     @include font(16, 1.2, 500, 0.03em);
     color: var(--title-text-color);
     text-align: center;
-
 }
+
 .team__position {
     @include font(16, 1.2, 400, 0.03em);
     color: var(--secondary-text-color);
@@ -70,10 +75,10 @@
     text-align: center;
     font-style: bold;
     color: var(--title-text-color);  
-    
-    
+    @media screen and (min-width: 1200px) {
+     @include font(36, 1.17, 700, 0.03em);
+    }     
 }
-
 
 .client__item {
     margin-top: 30px;
@@ -82,19 +87,17 @@
     list-style: none;
     gap: 30px;
     width: 100%;
-    align-items: center;
-    
-    
-    
-    
-    
-    
+    align-items: center;   
 }
+
 .client__list {
-    width: calc((100% - 30px)/ 2);
-    
-    
-    
+    width: calc((100% - 30px)/ 2); 
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 60px)/ 3);
+    }
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 150px)/ 6);
+    }   
 }
 
 .client__picture {
