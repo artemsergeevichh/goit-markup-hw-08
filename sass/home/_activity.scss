@@ -2,6 +2,7 @@
     @media screen and (max-width: 1199px) {
         max-width: 100%;
         display: none;
+        
     }
 }
 .activ__name {
@@ -16,6 +17,7 @@
     list-style: none;
     display: flex;
     gap: 30px;
+    justify-content: space-between;
 }
 
 .activ__picture {

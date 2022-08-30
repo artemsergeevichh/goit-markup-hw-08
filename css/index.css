@@ -211,6 +211,8 @@ body {
   .header__contact {
     display: flex;
     gap: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 
@@ -652,6 +654,7 @@ body {
   list-style: none;
   display: flex;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .activ__picture {
