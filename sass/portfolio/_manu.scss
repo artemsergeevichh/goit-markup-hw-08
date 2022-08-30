@@ -1,6 +1,12 @@
 .manu {
     background-color: var(--option-button-color);
     padding-bottom: 0px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 94px;
+    }
     
 }
 .manu__section {  

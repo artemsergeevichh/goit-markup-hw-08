@@ -41,9 +41,19 @@ body {
   padding-right: 15px;
   width: 100%;
 }
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .section {
-  padding: 60px 0;
+  padding: 60px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0px;
+  }
 }
 
 .header {
@@ -204,7 +214,8 @@ body {
 @media screen and (min-width: 768px) {
   .header__contact {
     display: block;
-    margin-top: 21px;
+    flex-wrap: wrap;
+    margin-top: 3px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -239,7 +250,9 @@ body {
 }
 @media screen and (min-width: 768px) {
   .header__link {
-    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 10px;
     align-items: center;
     font-size: 12px;
     line-height: 1.14;
@@ -254,6 +267,7 @@ body {
     line-height: 1.14;
     font-weight: 500;
     letter-spacing: 0.02em;
+    margin-top: 0px;
   }
 }
 
@@ -1234,6 +1248,16 @@ body {
   background-color: var(--option-button-color);
   padding-bottom: 0px;
 }
+@media screen and (min-width: 768px) {
+  .manu {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .manu {
+    padding-bottom: 94px;
+  }
+}
 
 .manu__section {
   width: 100%;
@@ -1346,11 +1370,10 @@ body {
 
 .tabs__name {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
   background-color: var(--option-button-color);
   border-top: none;
-  flex-grow: 1;
 }
+
 .tabs__header {
   font-size: 18px;
   line-height: 2;

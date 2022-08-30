@@ -32,10 +32,16 @@ body {
     padding-left: 15px;
     padding-right: 15px; 
     width: 100%;
-    // width: 1200px;
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+    
 }
 
 .section {
-    padding: 60px 0;
-    
+    padding: 60px 0px;
+    @media screen and (min-width: 1200px) {
+        padding: 94px 0px;
+        
+    }
 }
