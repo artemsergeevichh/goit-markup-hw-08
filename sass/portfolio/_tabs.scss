@@ -18,7 +18,11 @@
 .tabs__picture {
     position: relative;
     overflow: hidden; 
+    
      
+}
+.tabs__img {
+    // height: 100%
 }
 
 .tabs__text {
@@ -38,10 +42,7 @@
 }  
     
 .tabs__list {
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
-    flex-direction: column;
     border: 1px solid #EEEEEE;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     @media screen and (min-width: 768px) {
@@ -66,6 +67,7 @@
     border-top: none; 
     
     
+    
 }
 .tabs__header {
     @include font(18, 2, 700, 0.06em);
@@ -75,6 +77,7 @@
 
 .tabs__marked {
     @include font(16, 1.9, 400, 0.03em);
-    color: var(--secondary-text-color);    
+    color: var(--secondary-text-color); 
+       
 }
 
